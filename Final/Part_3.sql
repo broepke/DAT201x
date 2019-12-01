@@ -16,12 +16,8 @@ HAVING  AVG(UnitPrice)   >
 --orders which shipped from the USA.
 
 SELECT FirstName, EmployeeID FROM dbo.Employees as e
-
 WHERE EmployeeID in
-
 	(SELECT EmployeeID FROM dbo.Orders as o
-
-
 WHERE ShipCountry = 'USA'
 );
 
@@ -35,5 +31,4 @@ WHERE ShipCountry = 'USA'
 
 declare @ProductNames table (ProductName varchar(40))
 insert into @ProductNames SELECT ProductName FROM dbo.Products
-
 SELECT * FROM @ProductNames ;
