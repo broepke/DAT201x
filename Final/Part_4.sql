@@ -48,11 +48,11 @@ SELECT Country, ContactTitle, COUNT(ContactTitle) AS Count,  CASE WHEN GROUPING_
 FROM dbo.Customers
 GROUP BY ROLLUP( Country, ContactTitle)
 
-5 Convert the following query to be pivoted, using PIVOT().
+--5 Convert the following query to be pivoted, using PIVOT().
 
-SELECT CategoryID, AVG(UnitPrice)
-FROM Products
-GROUP BY CategoryID;
+--SELECT CategoryID, AVG(UnitPrice)
+--FROM Products
+--GROUP BY CategoryID;
 
 --Your result set should look like this:
 
